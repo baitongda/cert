@@ -1,0 +1,39 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #FBF9FE;
+  overflow-x: hidden;
+}
+
+.container{
+  height: 100%;
+  overflow: hidden;
+}
+
+.weui_navbar {
+  border-top: 1px solid #ccc;
+}
+
+.weui_panel:first-child {
+  margin-top: 10px;
+}
+
+.panel-first {
+  margin-top: 0px !important;
+}
+
+.color-danger {
+  color: #f43530;
+}
+
+.color-success {
+  color: #04BE02;
+}
+
+/*价格*/
+.certificate-price {
+  color: #f43530;
+  font-size: 16px;
+}

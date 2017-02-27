@@ -1,0 +1,22 @@
+.indicators {
+  position: absolute;
+  top: 83%;
+  line-height: normal;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.indicators .dot {
+  margin: 0 3px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  float: left;
+  background-color: #5a5a5a;
+  font-size: 0px;
+}
+
+.indicators .active {
+  background-color: #fff;
+}

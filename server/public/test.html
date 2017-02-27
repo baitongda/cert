@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="full-screen" content="yes">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta content="telephone=no" name="format-detection">
+    <title>考证通</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+      #frame {
+          width: 100%;
+          height: 100%;
+          border: none;
+      }
+    </style>
+    <script>
+      // window.addEventListener('message', function(e) {
+      //   console.log(e.data);
+      //   window.frames[0].postMessage(window.screen.width, '*');
+      //   // if (/\/about/.test(e.data)) { }
+      // }, false);
+    </script>
+</head>
+  <!-- <frameset>
+      <frame id="frame" src="http://online.xinsuduedu.com" scrolling="no"></frame>
+  </frameset> -->
+<body>
+  <form id="pay_form" name="pay_form"
+    action="http://yikatong.online.xinsuduedu.com/index.php/clientlogin/get_user_data"
+    method="post">
+    <input type="hidden" name="openid" id="openid" value="" />
+    <input type="hidden" name="headimgurl" id="headimgurl" value="http://wx.qlogo.cn/mmopen/uwZqlfqg3LrrcrasCeROCP9eXcueFxRoYnv6jUCdISHy2WiahBG3MtHJbaSoY2ng0Bkcu2tVSrNslkGdO4IIRSw/0" />
+    <input type="submit" />
+  </form>
+</body>
+</html>

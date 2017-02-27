@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.people-media-box {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.category-box-container {
+}
+
+.category-box-container .row:before, .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.category-box-container .row {
+}
+
+.category-box-container .box {
+  text-align: center;
+  width: 25%;
+  float: left;
+  padding-top: 12px;
+  padding-bottom: 4px;
+}
+
+.active-box {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.category-box-container .box img {
+  border-radius: 50%;
+  width: 60%;
+}
+
+.category-box-container .box p {
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}
+
+.category-selector-container {
+  overflow: hidden;
+  border-bottom: 1px solid #E5E5E5;
+  background-color: #FBF9FE;
+  height: 200px;
+
+  transition: all 0.3s ease;
+}
+
+.category-selector-container .row {
+  border-top: 1px solid #E5E5E5;
+  margin: 0;
+}
+
+.category-selector-container .cell {
+  text-align: center;
+  height: 48px;
+  line-height: 48px;
+  width: 33.33%;
+  float: left;
+  color: #888;
+  font-size: 13px;
+  border-right: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  border-collapse:collapse;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.row .cell:nth-child(3) {
+  border-right: none;
+}
+
+.arrow-up {
+  margin-left: 12.5%;
+  transform: translateX(-15px);
+  width: 0px;
+  height: 0px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #E5E5E5;
+  /*以下属性可以是IE5兼容*/
+  font-size: 0px;
+  line-height: 0px;
+
+  /*transition: all 0.3s ease;*/
+}

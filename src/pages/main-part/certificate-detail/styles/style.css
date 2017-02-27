@@ -1,0 +1,80 @@
+.certificate-day-media-box {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/*倒数日期*/
+.certificate-day {
+  text-align: center;
+}
+
+.certificate-day span {
+  color: #f43530;
+  font-size: 28px;
+}
+
+.select-container {
+  overflow: hidden;
+  margin: 0;
+  margin-top: 4px;
+}
+
+.select-container .select-box {
+  float: left;
+  border: 1px solid #eee;
+  padding: 2px 12px;
+  border-radius: 2px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #888;
+  margin: 4px 8px 4px 0;
+}
+
+.select-container .active{
+  border: 1px solid #09bb07;
+  color: #09bb07;
+}
+
+.cert-detail-info {
+  font-size: 18px;
+}
+
+.cert-detail-info span {
+  font-size: 13px;
+  color: #CECECE;
+  line-height: 1em;
+  list-style: none;
+  overflow: hidden;
+  float: right;
+}
+
+.cert-detail-price {
+  color: #f43530;
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+.cert-detail-price span {
+  font-size: 24px;
+}
+
+.cert-detail-tab {
+  padding-bottom: 56px;
+}
+
+.cert-detail-btn {
+  height: 52px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #9ED99D;
+  z-index: 1000;
+  text-align: center;
+  font-size: 20px;
+  line-height: 2.7;
+  color: white;
+}
+
+.btn-active {
+  background-color: #09bb07;
+}

@@ -1,0 +1,25 @@
+.editor-total-price {
+  float: right;
+  padding: 12px;
+  padding-right: 16px;
+  color: #888;
+}
+
+.editor-total-price span {
+  color: #f43530;
+  font-size: 32px;
+}
+
+.editor-card-title {
+  font-size: 16px !important;
+}
+
+.editor-card-box .weui_media_info {
+  margin-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.editor-card-box {
+  padding: 8px;
+  border-left: 9px solid #09bb07;
+}

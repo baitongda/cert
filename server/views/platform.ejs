@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta content="telephone=no" name="format-detection">
+    <title>考证通</title>
+    <script>
+      var _prepay_id = "<%= prepay_id %>";
+      var _price = <%= price %>;
+      var _description = "<%= description %>";
+    </script>
+</head>
+<body ontouchstart>
+    <div class="container" id="container"></div>
+    <% if (ordered) { %>
+      <div>正在跳转至收银台</div>
+      <form id="pay_form" name="pay_form"
+        action="http://120.236.138.221:7752/paymentToCode/payment_payorderid.action"
+        method="post">
+        <input type="hidden" name="agencyname" id="agencyname" value="<%= form.agencyname %>" />
+        <input type="hidden" name="orderid" id="orderid" value="<%= form.orderid %>" />
+        <input type="hidden" name="timestamp" id="timestamp" value="<%= form.timestamp %>" />
+        <input type="hidden" name="sign" id="sign" value="<%= form.sign %>" />
+      </form>
+      <script>
+          document.getElementById("pay_form").submit();
+      </script>
+    <% } %>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="../build/vendors.js"></script>
+    <script src="../build/platform.bundle.js"></script>
+</body>
+</html>
